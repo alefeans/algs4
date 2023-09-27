@@ -1,6 +1,6 @@
 # Algs4
 
-Implementation of algorithms and data structures from the [Algorithms](https://www.coursera.org/learn/algorithms-part1/) course in Python.
+Implementation of algorithms and data structures from [Algorithms](https://www.coursera.org/learn/algorithms-part1/) course in Python.
 
 
 ## License
