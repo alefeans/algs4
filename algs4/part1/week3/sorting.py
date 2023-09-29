@@ -25,3 +25,13 @@ def merge_sort(arr: List[int]) -> List[int]:
     mid = len(arr) // 2
     left, right = merge_sort(arr[:mid]), merge_sort(arr[mid:])
     return merge(left, right)
+
+
+def not_in_place_quick_sort(arr):
+    if len(arr) < 2:
+        return arr
+
+    pivot = arr.pop()
+    lower = [x for x in arr if x < pivot]
+    greater = [x for x in arr if x > pivot]
+    return not_in_place_quick_sort(lower) + [pivot] + not_in_place_quick_sort(greater)
